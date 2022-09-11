@@ -1,0 +1,523 @@
+﻿body {
+    margin:0;
+    padding:0;
+    direction:rtl;
+      font-size:25px;
+      font-family:Calibri;
+      
+   /*background-color:#f1f1f1;*/
+}
+
+
+
+/*טאב לתוספת
+!!!!!!!!!!!!!!!!!!!!!!!*/
+/*.bg-img{
+ 
+  /* The image used 
+  background-image: url(images/ראשי/netivot.jpg);
+
+  min-height: 450px;
+
+   Center and scale the image nicely 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+   Needed to position the navbar 
+  position: relative;
+}
+
+ Position the navbar container inside the image 
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+ The navbar 
+.topnav {
+  overflow: hidden;
+ 
+}
+
+ Navbar links 
+.topnav a { background-color: #ffffff;
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+   font-weight:bold;
+           font-size:25px;
+           color: #06339a;
+}
+
+.topnav a:hover {
+  background-color: #06339a;
+  color: white;
+ 
+}*/
+
+/*!!!!!!!!!!!!!!!!!!
+עד כאן טאב לתוספת*/
+
+
+
+
+header{
+  background-color:#224b6f;
+    height:100px;
+    width:100%;
+
+
+}
+.box1{
+width:1140px;
+margin:auto;
+/*background-color:red;*/
+
+}
+.logo{
+   background-position:right;
+  margin-left:70px;
+   float:right;
+  
+  
+}
+.tafrit {
+   
+   height: 50px;
+   width: 100%;
+   color: white;
+  
+   /*background-color:pink;*/
+
+}
+
+
+.tafrit ul li {
+       list-style-type: none;
+       float: right;
+    padding-top:20px;
+ 
+   }
+.tafrit ul li a {
+          font-weight:bold;
+           font-size:25px;
+           color: white;
+           text-decoration: none;
+           padding-left: 20px;
+           padding-right: 20px;
+            border-left: 2px solid white;
+            display:block; text-decoration:none;
+       }
+
+.tafrit ul li a:hover {
+  text-decoration:underline;
+ 
+    }
+
+.tafrit ul  li:last-child a{
+      border-left: none;  
+}
+
+.tafrit ul li ul li { float:none; }
+.tafrit ul  li ul { position:absolute; 
+                    display:none; 
+                   background-color:#ffffff50;
+                    z-index:999;
+               
+}
+
+ .tafrit ul  li:hover ul { display:block; }
+ .tafrit ul  li ul a {  border-left:none; }
+ 
+
+/*!!!!!!תפריט מקורי עיצוב!!!!!!!*/
+/*.tafrit ul li {
+       list-style-type: none;
+       float: right;
+    
+ 
+   }
+.tafrit ul li a {
+          font-weight:bold;
+           font-size:25px;
+           color: #06339a;
+           text-decoration: none;
+           padding-left: 20px;
+           padding-right: 20px;
+            border-left: 2px solid #06339a;
+            line-height:70px;
+       }
+
+.tafrit ul li a:hover {
+  text-decoration:underline;
+ 
+    }
+
+.tafrit ul  li:last-child a{
+      border-left: none;  
+}*/
+
+
+.header2{
+  
+   padding-bottom:20px;
+    width:100%;
+
+   background-color:#f1f1f1;
+}
+a:-webkit-any-link {
+    color:#b31351;
+   padding-right:15px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+ 
+  position: relative;
+  margin: auto;
+ 
+}
+
+ /*Hide the images by default*/ 
+.mySlides {
+  display: none;
+ 
+}
+.mySlides img {
+
+  height:500px;
+}
+.mySlides fade{
+    width:100%;
+}
+ /*Next & previous buttons*/ 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+ /*Position the "next button" to the right*/ 
+.next {
+  left:0;
+  border-radius: 3px 0 0 3px;
+}
+
+ /*On hover, add a black background color with a little bit see-through*/ 
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+ /*Caption text*/ 
+.text {
+  color: #f2f2f2;
+  font-weight:bold;
+  font-size: 20px;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 8px;
+  width: 20%;
+ margin-right:40%;
+  text-align: center;
+  /*background-color:#f2f2f2;*/
+}
+
+ /*Number text (1/3 etc)*/ 
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+ /*The dots/bullets/indicators*/ 
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+ Fading animation 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+h1{
+    padding-top:70px;
+    width:350px;
+    margin:auto;
+     text-align:center;
+    font-size:40px;
+    padding-bottom:30px;
+    border-bottom:2px solid #b31351;
+    color:#003ba8;
+     text-shadow: 0 0 5px #000000;
+
+}
+h2{
+    text-align:center;
+    padding:30px 0;
+     margin:auto;
+    font-size:25px;
+    font-weight:normal;
+   color:#003ba8;
+}
+.p{
+     text-align:center;
+    padding:30px 0;
+     margin:auto;
+    font-size:25px;
+    font-weight:normal;
+   color:#003ba8;
+}
+.info{
+   width:100px;
+    height:50px;
+    float:right;
+    padding:5px 0;
+  margin-left:100px;
+    border-bottom:2px solid #003ba8;
+     text-align:center;
+     line-height:50px;
+    font-size:25px;
+    padding-bottom:50px;
+    padding-top:30px;
+    color:#003ba8;
+}
+.none{
+     margin-left:0;
+}
+.num{
+    
+    text-align:center;
+    font-size:40px; 
+    color:#b31351;
+     font-weight:bold;
+     width:auto;
+}
+.box{
+ 
+   
+    margin:auto;
+    height:200px;
+    width:500px;
+}
+.right{
+     width:700px;
+    background-color:#f1f1f1;
+    height:600px;
+    float:right;
+    margin-left:50px;
+}
+.left{ float:right;
+        margin-right:50px;
+     width:300px;
+    background-color:#f1f1f1;
+    height:600px;
+   
+}
+.left img{
+    width:100%;
+    
+}
+.a{
+   
+     margin:auto;
+}
+section{
+ 
+  margin:auto;
+    width:1100px;
+    height:600px;
+   padding:50px 0;
+}
+.pic_mikum{
+    background-image:url(images/ראשי/mikum_icon.png);
+    background-size:70px;
+    background-repeat:no-repeat;
+    background-position:center;
+   height:100px;
+
+   /*border:2px solid red;*/
+}
+.pic2{
+  
+    background-image:url(images1/img11.PNG);
+    background-size:90%;
+    background-repeat:no-repeat;
+    background-position:center;
+    height:400px;
+    /*background-color:#f1f1f1;*/
+
+}
+.rek{height:50px;
+      clear:both;
+}
+/*!!!!!!כפתור גלילה לראש העמוד!!!!!!*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 93%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #f1f1f1;
+    color: #224b6f;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 15px 15px 5px 5px;
+    font-size: 10px;
+  
+}
+    #myBtn:hover {
+        background-color: #555;
+        color:#fff;
+    }
+
+
+
+    /*!!!!!!!!תחתית עמוד!!!!!!*/
+
+footer {
+    margin-top: 100px;
+    height: 270px;
+    width: 100%;
+     background-color: #224b6f;  
+}
+.links {
+    /*background-color:#edb42b;*/
+    width:60%;
+    float: right;
+    /*margin: 20px 10% 0 0;*/
+    margin-left:10px;
+    margin-top:40px;
+    padding-right:40px;
+}
+.right-footer {
+    margin: 20px 10px 0 10px;
+    width: 25%;
+    /*background-color:#25e619;*/
+    float: right;
+    color: white;
+}
+.right-footer p{
+    margin :0;
+    padding:0;
+   color:#fff;
+}
+.right-footer-color {
+    color: white;
+    font-size: 15px;
+}
+.right-footer p a:-webkit-any-link {
+    color:#fff; 
+    padding-right: 10px;
+}
+.zorkesher2 {
+    width:30%;
+    height: 100%;
+   
+    font-family: Calibri;
+    float: right;
+    background-color:#f1f1f1;
+    
+}
+.zorkesher2 p{
+   
+     margin :0;
+    padding:0;
+   color:#224b6f;
+    
+}
+
+ .links h1 ,.zorkesher2 h1{
+    padding:0;
+    text-align:center;
+    /*height:20px;
+    line-height:20px;*/
+    font-size:30px;  
+    border-bottom:none;
+    color:#fff;
+    width:100%;
+}
+ .zorkesher2 h1{
+      color:#b31351;
+     padding:20px 0;
+ }
+.zorkesher2 p{
+    font-size:20px;
+}
+    .zorkesher2 label {
+        margin-bottom: 15px;
+    }
+    .zorkesher2 input[type="text"],
+    .zorkesher2 input[type="email"] {
+        width: 80%;
+        height: 30px;
+        background-color: #ffffff;
+        margin-right: 20px;
+        border: solid 2px #5c6b60;
+        font-family: Calibri;
+    }
+    .zorkesher2 input[type="submit"] {
+        background-color: #b31351;
+        color: white;
+        width: 60px;
+        height: 25px;
+        float: right;
+        
+        margin: 10px 70% 0 0;
+        font-size: 15px;
+        font-weight: bolder;
+        border: none;
+    }
+  
+  
